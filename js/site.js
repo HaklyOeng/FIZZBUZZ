@@ -50,7 +50,7 @@ function generateValues(stop) {
 
     let numbers = [];
     for (let n = 1; n <= stop; n = n + 1) {
-        if (stop <= 5000) {
+        if (stop <= 9000) {
             numbers.push(n);
         }       
     }
