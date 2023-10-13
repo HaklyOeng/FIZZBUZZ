@@ -27,7 +27,7 @@ footer {
 
 footer,
 nav.navbar {
-    background-color: var(--ho-primary-color);
+    background-color: var(--ho-custom-core);
     color: var(--ho-light-color);
 }
 
@@ -54,3 +54,16 @@ footer .bi:hover {
     max-width: 400px;    
 }
 
+.fizz{
+    background-color: var(--ho-light-color) !important;
+    color: var(--ho-dark-color) !important;
+}
+
+.buzz{
+    background-color: var(--ho-dark-color) !important;
+    color: var(--ho-light-color) !important;
+}
+
+.fizzBuzz {
+    background-color: #ff993b !important;
+}

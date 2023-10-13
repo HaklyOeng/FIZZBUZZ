@@ -1,0 +1,380 @@
+:root {
+    /* default theme will be blue */
+    --ho-theme-core: var(--ho-blue-core);
+    --ho-theme-100: var(--ho-blue-100);
+    --ho-theme-150: var(--ho-blue-150);
+    --ho-theme-200: var(--ho-blue-200);
+    --ho-theme-300: var(--ho-blue-300);
+    --ho-theme-400: var(--ho-blue-400);
+    --ho-theme-500: var(--ho-blue-500);
+    --ho-theme-600: var(--ho-blue-600);
+    --ho-theme-700: var(--ho-blue-700);
+    --ho-theme-800: var(--ho-blue-800);
+    --ho-theme-850: var(--ho-blue-850);
+    --ho-theme-900: var(--ho-blue-900);
+    /* #region blue */
+    --ho-blue-core: #0d6efd;
+    --ho-blue-100: hsl(216, 50%, 91%);
+    --ho-blue-150: hsl(216, 50%, 86%);
+    --ho-blue-200: hsl(216, 50%, 81%);
+    --ho-blue-300: hsl(216, 50%, 71%);
+    --ho-blue-400: hsl(216, 50%, 61%);
+    --ho-blue-500: hsl(216, 50%, 51%);
+    --ho-blue-600: hsl(216, 50%, 41%);
+    --ho-blue-700: hsl(216, 50%, 31%);
+    --ho-blue-800: hsl(216, 50%, 21%);
+    --ho-blue-850: hsl(216, 50%, 16%);
+    --ho-blue-900: hsl(216, 50%, 11%);
+    /* #endregion blue */
+    /* #region indigo */
+    --ho-indigo-core: #6610f2;
+    --ho-indigo-100: hsl(263, 88%, 90%);
+    --ho-indigo-150: hsl(263, 88%, 85%);
+    --ho-indigo-200: hsl(263, 88%, 80%);
+    --ho-indigo-300: hsl(263, 88%, 70%);
+    --ho-indigo-400: hsl(263, 88%, 60%);
+    --ho-indigo-500: hsl(263, 88%, 50%);
+    --ho-indigo-600: hsl(263, 88%, 40%);
+    --ho-indigo-700: hsl(263, 88%, 30%);
+    --ho-indigo-800: hsl(263, 88%, 20%);
+    --ho-indigo-850: hsl(263, 88%, 15%);
+    --ho-indigo-900: hsl(263, 88%, 10%);
+    /* #endregion indigo */
+    /* #region purple */
+    --ho-purple-core: #6f42c1;
+    --ho-purple-100: hsl(261, 52%, 90%);
+    --ho-purple-150: hsl(261, 52%, 85%);
+    --ho-purple-200: hsl(261, 52%, 80%);
+    --ho-purple-300: hsl(261, 52%, 70%);
+    --ho-purple-400: hsl(261, 52%, 60%);
+    --ho-purple-500: hsl(261, 52%, 50%);
+    --ho-purple-600: hsl(261, 52%, 40%);
+    --ho-purple-700: hsl(261, 52%, 30%);
+    --ho-purple-800: hsl(261, 52%, 20%);
+    --ho-purple-850: hsl(261, 52%, 15%);
+    --ho-purple-900: hsl(261, 52%, 10%);
+    /* #endregion purple */
+    /* #region pink */
+    --ho-pink-core: #d63384;
+    --ho-pink-100: hsl(331, 47%, 90%);
+    --ho-pink-150: hsl(331, 47%, 85%);
+    --ho-pink-200: hsl(331, 47%, 80%);
+    --ho-pink-300: hsl(331, 47%, 70%);
+    --ho-pink-400: hsl(331, 47%, 60%);
+    --ho-pink-500: hsl(331, 47%, 50%);
+    --ho-pink-600: hsl(331, 47%, 40%);
+    --ho-pink-700: hsl(331, 47%, 30%);
+    --ho-pink-800: hsl(331, 47%, 20%);
+    --ho-pink-850: hsl(331, 47%, 15%);
+    --ho-pink-900: hsl(331, 47%, 10%);
+    /* #endregion pink */
+    /* #region red */
+    --ho-red-core: #dc3545;
+    --ho-red-100: hsl(355, 70%, 91%);
+    --ho-red-150: hsl(355, 70%, 86%);
+    --ho-red-200: hsl(355, 70%, 81%);
+    --ho-red-300: hsl(355, 70%, 71%);
+    --ho-red-400: hsl(355, 70%, 61%);
+    --ho-red-500: hsl(355, 70%, 51%);
+    --ho-red-600: hsl(355, 70%, 41%);
+    --ho-red-700: hsl(355, 70%, 31%);
+    --ho-red-800: hsl(355, 70%, 21%);
+    --ho-red-850: hsl(355, 70%, 16%);
+    --ho-red-900: hsl(355, 70%, 11%);
+    /* #endregion red */
+    /* #region orange */
+    --ho-orange-core: #fd7e14;
+    --ho-orange-100: hsl(19, 50%, 91%);
+    --ho-orange-150: hsl(19, 50%, 86%);
+    --ho-orange-200: hsl(19, 50%, 81%);
+    --ho-orange-300: hsl(19, 50%, 71%);
+    --ho-orange-400: hsl(19, 50%, 61%);
+    --ho-orange-500: hsl(19, 50%, 51%);
+    --ho-orange-600: hsl(19, 50%, 41%);
+    --ho-orange-700: hsl(19, 50%, 31%);
+    --ho-orange-800: hsl(19, 50%, 21%);
+    --ho-orange-850: hsl(19, 50%, 16%);
+    --ho-orange-900: hsl(19, 50%, 11%);
+    /* #endregion orange */
+    /* #region yellow */
+    --ho-yellow-core: #ffc107;
+    --ho-yellow-100: hsl(46, 70%, 90%);
+    --ho-yellow-150: hsl(46, 70%, 85%);
+    --ho-yellow-200: hsl(46, 70%, 80%);
+    --ho-yellow-300: hsl(46, 70%, 70%);
+    --ho-yellow-400: hsl(46, 70%, 60%);
+    --ho-yellow-500: hsl(46, 70%, 50%);
+    --ho-yellow-600: hsl(46, 70%, 40%);
+    --ho-yellow-700: hsl(46, 70%, 30%);
+    --ho-yellow-800: hsl(46, 70%, 20%);
+    --ho-yellow-850: hsl(46, 70%, 15%);
+    --ho-yellow-900: hsl(46, 70%, 10%);
+    /* #endregion yellow */
+    /* #region green */
+    --ho-green-core: #198754;
+    --ho-green-100: hsl(152, 38%, 95%);
+    --ho-green-150: hsl(152, 38%, 90%);
+    --ho-green-200: hsl(152, 38%, 85%);
+    --ho-green-300: hsl(152, 38%, 75%);
+    --ho-green-400: hsl(152, 38%, 65%);
+    --ho-green-500: hsl(152, 38%, 55%);
+    --ho-green-600: hsl(152, 38%, 45%);
+    --ho-green-700: hsl(152, 38%, 35%);
+    --ho-green-800: hsl(152, 38%, 25%);
+    --ho-green-850: hsl(152, 38%, 20%);
+    --ho-green-900: hsl(152, 38%, 15%);
+    /* #endregion green */
+    /* #region teal */
+    --ho-teal-core: #20c997;
+    --ho-teal-100: hsl(162, 60%, 89%);
+    --ho-teal-150: hsl(162, 60%, 84%);
+    --ho-teal-200: hsl(162, 60%, 79%);
+    --ho-teal-300: hsl(162, 60%, 69%);
+    --ho-teal-400: hsl(162, 60%, 59%);
+    --ho-teal-500: hsl(162, 60%, 49%);
+    --ho-teal-600: hsl(162, 60%, 39%);
+    --ho-teal-700: hsl(162, 60%, 29%);
+    --ho-teal-800: hsl(162, 60%, 19%);
+    --ho-teal-850: hsl(162, 60%, 14%);
+    --ho-teal-900: hsl(162, 60%, 9%);
+    /* #endregion teal */
+    /* #region cyan */
+    --ho-cyan-core: #0dcaf0;
+    --ho-cyan-100: hsl(191, 60%, 90%);
+    --ho-cyan-150: hsl(191, 60%, 85%);
+    --ho-cyan-200: hsl(191, 60%, 80%);
+    --ho-cyan-300: hsl(191, 60%, 70%);
+    --ho-cyan-400: hsl(191, 60%, 60%);
+    --ho-cyan-500: hsl(191, 60%, 50%);
+    --ho-cyan-600: hsl(191, 60%, 40%);
+    --ho-cyan-700: hsl(191, 60%, 30%);
+    --ho-cyan-800: hsl(191, 60%, 20%);
+    --ho-cyan-850: hsl(191, 60%, 15%);
+    --ho-cyan-900: hsl(191, 60%, 10%);
+    /* #endregion cyan */
+    /* #region gray */
+    --ho-gray-core: #adb5bd;
+    --ho-gray-100: hsl(210, 17%, 98%);
+    --ho-gray-150: hsl(210, 17%, 93%);
+    --ho-gray-200: hsl(210, 17%, 88%);
+    --ho-gray-300: hsl(210, 17%, 78%);
+    --ho-gray-400: hsl(210, 17%, 68%);
+    --ho-gray-500: hsl(210, 17%, 58%);
+    --ho-gray-600: hsl(210, 17%, 48%);
+    --ho-gray-700: hsl(210, 17%, 38%);
+    --ho-gray-800: hsl(210, 17%, 28%);
+    --ho-gray-850: hsl(210, 17%, 23%);
+    --ho-gray-900: hsl(210, 17%, 18%);
+    /* #endregion gray */
+    /* #region custom */
+    --ho-custom-core: #bd6a1d ;
+    --ho-custom-100: hsl(25, 75%, 90%);
+    --ho-custom-150: hsl(25, 75%, 85%);
+    --ho-custom-200: hsl(25, 75%, 80%);
+    --ho-custom-300: hsl(25, 75%, 70%);
+    --ho-custom-400: hsl(25, 75%, 60%);
+    --ho-custom-500: hsl(25, 75%, 50%);
+    --ho-custom-600: hsl(25, 75%, 40%);
+    --ho-custom-700: hsl(25, 75%, 30%);
+    --ho-custom-800: hsl(25, 75%, 20%);
+    --ho-custom-850: hsl(25, 75%, 15%);
+    --ho-custom-900: hsl(25, 75%, 10%);
+    /* #endregion custom */
+}
+
+[data-ho-theme="custom"] {
+    --ho-theme-core: var(--ho-custom-core);
+    --ho-theme-100: var(--ho-custom-100);
+    --ho-theme-150: var(--ho-custom-150);
+    --ho-theme-200: var(--ho-custom-200);
+    --ho-theme-300: var(--ho-custom-300);
+    --ho-theme-400: var(--ho-custom-400);
+    --ho-theme-500: var(--ho-custom-500);
+    --ho-theme-600: var(--ho-custom-600);
+    --ho-theme-700: var(--ho-custom-700);
+    --ho-theme-800: var(--ho-custom-800);
+    --ho-theme-850: var(--ho-custom-850);
+    --ho-theme-900: var(--ho-custom-900);
+}
+
+[data-ho-theme="blue"] {
+    --ho-theme-core: var(--ho-blue-core);
+    --ho-theme-100: var(--ho-blue-100);
+    --ho-theme-150: var(--ho-blue-150);
+    --ho-theme-200: var(--ho-blue-200);
+    --ho-theme-300: var(--ho-blue-300);
+    --ho-theme-400: var(--ho-blue-400);
+    --ho-theme-500: var(--ho-blue-500);
+    --ho-theme-600: var(--ho-blue-600);
+    --ho-theme-700: var(--ho-blue-700);
+    --ho-theme-800: var(--ho-blue-800);
+    --ho-theme-850: var(--ho-blue-850);
+    --ho-theme-900: var(--ho-blue-900);
+}
+
+[data-ho-theme="indigo"] {
+    --ho-theme-core: var(--ho-indigo-core);
+    --ho-theme-100: var(--ho-indigo-100);
+    --ho-theme-150: var(--ho-indigo-150);
+    --ho-theme-200: var(--ho-indigo-200);
+    --ho-theme-300: var(--ho-indigo-300);
+    --ho-theme-400: var(--ho-indigo-400);
+    --ho-theme-500: var(--ho-indigo-500);
+    --ho-theme-600: var(--ho-indigo-600);
+    --ho-theme-700: var(--ho-indigo-700);
+    --ho-theme-800: var(--ho-indigo-800);
+    --ho-theme-850: var(--ho-indigo-850);
+    --ho-theme-900: var(--ho-indigo-900);
+}
+
+[data-ho-theme="purple"] {
+    --ho-theme-core: var(--ho-purple-core);
+    --ho-theme-100: var(--ho-purple-100);
+    --ho-theme-150: var(--ho-purple-150);
+    --ho-theme-200: var(--ho-purple-200);
+    --ho-theme-300: var(--ho-purple-300);
+    --ho-theme-400: var(--ho-purple-400);
+    --ho-theme-500: var(--ho-purple-500);
+    --ho-theme-600: var(--ho-purple-600);
+    --ho-theme-700: var(--ho-purple-700);
+    --ho-theme-800: var(--ho-purple-800);
+    --ho-theme-850: var(--ho-purple-850);
+    --ho-theme-900: var(--ho-purple-900);
+}
+
+[data-ho-theme="pink"] {
+    --ho-theme-core: var(--ho-pink-core);
+    --ho-theme-100: var(--ho-pink-100);
+    --ho-theme-150: var(--ho-pink-150);
+    --ho-theme-200: var(--ho-pink-200);
+    --ho-theme-300: var(--ho-pink-300);
+    --ho-theme-400: var(--ho-pink-400);
+    --ho-theme-500: var(--ho-pink-500);
+    --ho-theme-600: var(--ho-pink-600);
+    --ho-theme-700: var(--ho-pink-700);
+    --ho-theme-800: var(--ho-pink-800);
+    --ho-theme-850: var(--ho-pink-850);
+    --ho-theme-900: var(--ho-pink-900);
+}
+
+[data-ho-theme="red"] {
+    --ho-theme-core: var(--ho-red-core);
+    --ho-theme-100: var(--ho-red-100);
+    --ho-theme-150: var(--ho-red-150);
+    --ho-theme-200: var(--ho-red-200);
+    --ho-theme-300: var(--ho-red-300);
+    --ho-theme-400: var(--ho-red-400);
+    --ho-theme-500: var(--ho-red-500);
+    --ho-theme-600: var(--ho-red-600);
+    --ho-theme-700: var(--ho-red-700);
+    --ho-theme-800: var(--ho-red-800);
+    --ho-theme-850: var(--ho-red-850);
+    --ho-theme-900: var(--ho-red-900);
+}
+
+[data-ho-theme="orange"] {
+    --ho-theme-core: var(--ho-orange-core);
+    --ho-theme-100: var(--ho-orange-100);
+    --ho-theme-150: var(--ho-orange-150);
+    --ho-theme-200: var(--ho-orange-200);
+    --ho-theme-300: var(--ho-orange-300);
+    --ho-theme-400: var(--ho-orange-400);
+    --ho-theme-500: var(--ho-orange-500);
+    --ho-theme-600: var(--ho-orange-600);
+    --ho-theme-700: var(--ho-orange-700);
+    --ho-theme-800: var(--ho-orange-800);
+    --ho-theme-850: var(--ho-orange-850);
+    --ho-theme-900: var(--ho-orange-900);
+}
+
+[data-ho-theme="yellow"] {
+    --ho-theme-core: var(--ho-yellow-core);
+    --ho-theme-100: var(--ho-yellow-100);
+    --ho-theme-150: var(--ho-yellow-150);
+    --ho-theme-200: var(--ho-yellow-200);
+    --ho-theme-300: var(--ho-yellow-300);
+    --ho-theme-400: var(--ho-yellow-400);
+    --ho-theme-500: var(--ho-yellow-500);
+    --ho-theme-600: var(--ho-yellow-600);
+    --ho-theme-700: var(--ho-yellow-700);
+    --ho-theme-800: var(--ho-yellow-800);
+    --ho-theme-850: var(--ho-yellow-850);
+    --ho-theme-900: var(--ho-yellow-900);
+}
+
+[data-ho-theme="green"] {
+    --ho-theme-core: #198754;
+    --ho-theme-100: hsl(152, 38%, 95%);
+    --ho-theme-150: hsl(152, 38%, 90%);
+    --ho-theme-200: hsl(152, 38%, 85%);
+    --ho-theme-300: hsl(152, 38%, 75%);
+    --ho-theme-400: hsl(152, 38%, 65%);
+    --ho-theme-500: hsl(152, 38%, 55%);
+    --ho-theme-600: hsl(152, 38%, 45%);
+    --ho-theme-700: hsl(152, 38%, 35%);
+    --ho-theme-800: hsl(152, 38%, 25%);
+    --ho-theme-850: hsl(152, 38%, 20%);
+    --ho-theme-900: hsl(152, 38%, 15%);
+}
+
+[data-ho-theme="teal"] {
+    --ho-theme-core: var(--ho-teal-core);
+    --ho-theme-100: var(--ho-teal-100);
+    --ho-theme-150: var(--ho-teal-150);
+    --ho-theme-200: var(--ho-teal-200);
+    --ho-theme-300: var(--ho-teal-300);
+    --ho-theme-400: var(--ho-teal-400);
+    --ho-theme-500: var(--ho-teal-500);
+    --ho-theme-600: var(--ho-teal-600);
+    --ho-theme-700: var(--ho-teal-700);
+    --ho-theme-800: var(--ho-teal-800);
+    --ho-theme-850: var(--ho-teal-850);
+    --ho-theme-900: var(--ho-teal-900);
+}
+
+[data-ho-theme="cyan"] {
+    --ho-theme-core: var(--ho-cyan-core);
+    --ho-theme-100: var(--ho-cyan-100);
+    --ho-theme-150: var(--ho-cyan-150);
+    --ho-theme-200: var(--ho-cyan-200);
+    --ho-theme-300: var(--ho-cyan-300);
+    --ho-theme-400: var(--ho-cyan-400);
+    --ho-theme-500: var(--ho-cyan-500);
+    --ho-theme-600: var(--ho-cyan-600);
+    --ho-theme-700: var(--ho-cyan-700);
+    --ho-theme-800: var(--ho-cyan-800);
+    --ho-theme-850: var(--ho-cyan-850);
+    --ho-theme-900: var(--ho-cyan-900);
+}
+
+[data-ho-theme="gray"] {
+    --ho-theme-core: var(--ho-gray-core);
+    --ho-theme-100: var(--ho-gray-100);
+    --ho-theme-150: var(--ho-gray-150);
+    --ho-theme-200: var(--ho-gray-200);
+    --ho-theme-300: var(--ho-gray-300);
+    --ho-theme-400: var(--ho-gray-400);
+    --ho-theme-500: var(--ho-gray-500);
+    --ho-theme-600: var(--ho-gray-600);
+    --ho-theme-700: var(--ho-gray-700);
+    --ho-theme-800: var(--ho-gray-800);
+    --ho-theme-850: var(--ho-gray-850);
+    --ho-theme-900: var(--ho-gray-900);
+}
+
+
+
+[data-ho-theme="custom"] {
+    --ho-theme-core: var(--ho-custom-core);
+    --ho-theme-100: var(--ho-custom-100);
+    --ho-theme-150: var(--ho-custom-150);
+    --ho-theme-200: var(--ho-custom-200);
+    --ho-theme-300: var(--ho-custom-300);
+    --ho-theme-400: var(--ho-custom-400);
+    --ho-theme-500: var(--ho-custom-500);
+    --ho-theme-600: var(--ho-custom-600);
+    --ho-theme-700: var(--ho-custom-700);
+    --ho-theme-800: var(--ho-custom-800);
+    --ho-theme-850: var(--ho-custom-850);
+    --ho-theme-900: var(--ho-custom-900);
+}
