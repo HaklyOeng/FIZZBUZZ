@@ -67,3 +67,7 @@ footer .bi:hover {
 .fizzBuzz {
     background-color: #ff993b !important;
 }
+
+.col-height {
+    height: 50vh;
+}
