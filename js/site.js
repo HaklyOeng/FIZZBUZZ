@@ -1,46 +1,46 @@
 function getValues() {
 
-    let fizzValue = document.getElementById('fizzValue').value; 
-    let buzzValue = document.getElementById('buzzValue').value; 
+    let chillValue = document.getElementById('chillValue').value; 
+    let popValue = document.getElementById('popValue').value; 
     let stopValue = document.getElementById('stopValue').value; 
 
-    fizzValue = parseInt(fizzValue); 
-    buzzValue = parseInt(buzzValue); 
+    chillValue = parseInt(chillValue); 
+    popValue = parseInt(popValue); 
     stopValue = parseInt(stopValue); 
  
-    if (Number.isInteger(fizzValue) && Number.isInteger(buzzValue) && Number.isInteger(stopValue) && fizzValue <= 0) {
+    if (Number.isInteger(chillValue) && Number.isInteger(popValue) && Number.isInteger(stopValue) && chillValue <= 0) {
         Swal.fire({
             icon: 'error',
             title: 'Let keep thing above ZERO!',
             text: 'Please enter Number that are greater than ZERO :)'
         });
-    } else if (Number.isInteger(fizzValue) && Number.isInteger(buzzValue) && Number.isInteger(stopValue) && buzzValue <= 0) {
+    } else if (Number.isInteger(chillValue) && Number.isInteger(popValue) && Number.isInteger(stopValue) && popValue <= 0) {
         Swal.fire({
             icon: 'error',
             title: 'Let keep thing above ZERO!',
             text: 'Please enter Number that are greater than ZERO :)'
         });
-    } else if (Number.isInteger(fizzValue) && Number.isInteger(buzzValue) && Number.isInteger(stopValue) && stopValue <= 0) {
+    } else if (Number.isInteger(chillValue) && Number.isInteger(popValue) && Number.isInteger(stopValue) && stopValue <= 0) {
         Swal.fire({
             icon: 'error',
             title: 'Let keep thing above ZERO!',
             text: 'Please enter Number that are greater than ZERO :)'
         });
-    } else if (Number.isInteger(fizzValue) && Number.isInteger(buzzValue) && Number.isInteger(stopValue) && stopValue < (fizzValue * buzzValue)) {
+    } else if (Number.isInteger(chillValue) && Number.isInteger(popValue) && Number.isInteger(stopValue) && stopValue < (chillValue * popValue)) {
         Swal.fire({
             icon: 'error',
             title: 'Let give it somemore number to work with >_<',
-            text: 'Make sure the Multiplication of FizzValue and BuzzValue is greater then StopValue so we get at least one FizzBuzz :)'
+            text: 'Make sure the Multiplication of ChillValue and PopValue is greater then StopValue so we get at least one ChillPop :)'
         });
-    } else if (Number.isInteger(fizzValue) && Number.isInteger(buzzValue) && Number.isInteger(stopValue) && stopValue > 9000) {
+    } else if (Number.isInteger(chillValue) && Number.isInteger(popValue) && Number.isInteger(stopValue) && stopValue > 9000) {
         Swal.fire({
             icon: 'error',
             title: '>_< IT OVER 9000 >_<',
             text: 'Ensure that the Number you pick does not go over the LIMIT:)'
         });
-    } else if (Number.isInteger(fizzValue) && Number.isInteger(buzzValue) && Number.isInteger(stopValue)) {
-        let generateNumbers = generateFizzBuzz(stopValue, fizzValue, buzzValue);
-        displayFizzBuzz(generateNumbers);
+    } else if (Number.isInteger(chillValue) && Number.isInteger(popValue) && Number.isInteger(stopValue)) {
+        let generateNumbers = generateChillPop(stopValue, chillValue, popValue);
+        displayChillPop(generateNumbers);
     } else {
         Swal.fire({
             icon: 'error',
@@ -50,25 +50,25 @@ function getValues() {
     }   
 }
 
-function generateFizzBuzz(stopValue, fizzValue, buzzValue) {
+function generateChillPop(stopValue, chillValue, popValue) {
 
-    let FizzBuzz = [];
+    let ChillPop = [];
     for (let n = 1; n <= stopValue; n = n + 1) {
         
-        if (n % fizzValue == 0 && n % buzzValue == 0) {
-           FizzBuzz.push('FizzBuzz');
-        } else if (n % fizzValue == 0) {
-            FizzBuzz.push('Fizz');
-        } else if (n % buzzValue == 0) {
-            FizzBuzz.push('Buzz');
+        if (n % chillValue == 0 && n % popValue == 0) {
+           ChillPop.push('ChillingPop');
+        } else if (n % chillValue == 0) {
+            ChillPop.push('Chill');
+        } else if (n % popValue == 0) {
+            ChillPop.push('Pop');
         } else{
-            FizzBuzz.push(n); 
+            ChillPop.push(n); 
         }          
     }
-    return FizzBuzz;
+    return ChillPop;
 }
 
-function displayFizzBuzz(numbers) {
+function displayChillPop(numbers) {
     let html = '';
 
     for (let index = 0; index < numbers.length; index += 1) {
@@ -77,12 +77,12 @@ function displayFizzBuzz(numbers) {
 
         let className = '';
 
-        if (currentNumbers == 'FizzBuzz') {
-            className = 'fizzBuzz';
-        } else if (currentNumbers == 'Fizz') {
-            className = 'fizz';
-        } else if ( currentNumbers == 'Buzz') {
-            className = 'buzz';
+        if (currentNumbers == 'ChillPop') {
+            className = 'chillPop';
+        } else if (currentNumbers == 'Chill') {
+            className = 'chill';
+        } else if ( currentNumbers == 'Pop') {
+            className = 'pop';
         }
         html += `<div class="col border ${className}">${currentNumbers}</div>`;
     }

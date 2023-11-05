@@ -362,8 +362,6 @@
     --ho-theme-900: var(--ho-gray-900);
 }
 
-
-
 [data-ho-theme="custom"] {
     --ho-theme-core: var(--ho-custom-core);
     --ho-theme-100: var(--ho-custom-100);

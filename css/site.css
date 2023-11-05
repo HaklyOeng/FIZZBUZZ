@@ -2,7 +2,7 @@
     --ho-primary-color: #059DC0; /* theme-100 or theme-200 */
     --ho-secondary-color: #ff993b; /* theme-core theme-500 or theme-600 */
     --ho-light-color: #dfe3e4;
-    --ho-dark-color: #1b1b1b;
+    --ho-dark-color: #1b1b1b;    
 }
 
 /* #region Sticky Footer */
@@ -27,7 +27,7 @@ footer {
 
 footer,
 nav.navbar {
-    background-color: var(--ho-custom-core);
+    background-color: var(--ho-cyan-core);
     color: var(--ho-light-color);
 }
 
@@ -39,7 +39,7 @@ footer .bi {
 }
 
 footer .bi:hover {
-    color: var(--ho-secondary-color)
+    color: var(--ho-cyan-800)
 }
 
 .devicons {
@@ -56,18 +56,18 @@ footer .bi:hover {
     
 }
 
-.fizz{
-    background-color: var(--ho-light-color) !important;
+.chill{
+    background-color: var(--ho-cyan-200) !important;
     color: var(--ho-dark-color) !important;
 }
 
-.buzz{
-    background-color: var(--ho-dark-color) !important;
-    color: var(--ho-light-color) !important;
+.pop{
+    background-color: var(--ho-red-300) !important;
+    color: var(--ho-dark-color) !important;
 }
 
-.fizzBuzz {
-    background-color: #ff993b !important;
+.chillPop {
+    background-color: var(--ho-cyan-100) !important;
 }
 
 .col-height {
